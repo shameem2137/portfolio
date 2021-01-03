@@ -223,6 +223,7 @@ header .banner_contain-content h1 {
 }
 
 header .banner_contain-content p {
+  margin-top: 10px;
   font-size: 1.2rem;
 }
 
