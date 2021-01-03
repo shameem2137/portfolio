@@ -20,7 +20,7 @@ section {
     & h1 {
       width: 100%;
       text-align: left;
-      font-size: 2rem;
+      font-size: 1.5rem;
       letter-spacing: 2px;
       font-weight: 900;
       color: $black;
@@ -44,7 +44,7 @@ section {
           content: '';
           position: absolute;
           height: 100%;
-          width: 7px;
+          width: 5px;
           left: -20px;
           top: 50%;
           transform: translateY(-50%);
