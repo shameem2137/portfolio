@@ -2,7 +2,7 @@ header {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: url(/assets/images/bg-2.svg) no-repeat center/contain scroll;
+  background: linear-gradient(180deg, rgba(75, 121, 248, 0.6), rgba(94, 171, 243, 0.5));
   .nav_bar {
     position: fixed;
     display: flex;
