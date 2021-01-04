@@ -16,8 +16,8 @@ header {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 121, 248, 0.6)), to(rgba(94, 171, 243, 0.5)));
-  background: linear-gradient(180deg, rgba(75, 121, 248, 0.6), rgba(94, 171, 243, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b79f899), to(#5eabf380));
+  background: linear-gradient(180deg, #4b79f899, #5eabf380);
 }
 
 header .nav_bar {
@@ -276,7 +276,6 @@ section {
 }
 
 #service {
-  min-height: 50vh;
   padding: 30px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 171, 243, 0.5)), to(rgba(94, 171, 243, 0.2)));
   background: linear-gradient(180deg, rgba(94, 171, 243, 0.5), rgba(94, 171, 243, 0.2));
