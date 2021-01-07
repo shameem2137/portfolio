@@ -16,8 +16,8 @@ header {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b79f899), to(#5eabf380));
-  background: linear-gradient(180deg, #4b79f899, #5eabf380);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b79f899), to(#5eabf380)), url(../images/bg-2.svg) no-repeat center/contain scroll;
+  background: linear-gradient(180deg, #4b79f899, #5eabf380), url(../images/bg-2.svg) no-repeat center/contain scroll;
 }
 
 header .nav_bar {
