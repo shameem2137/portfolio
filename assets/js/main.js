@@ -1,18 +1,16 @@
-const navbar = document.querySelector('.nav_bar-button');
-const overlay = document.querySelector('.overlay');
-const body = document.getElementsByTagName('body')[0];
+const navbar = document.querySelector('.navbar');
+const navbarbtn = document.querySelector('.navbar-toggler');
+const icon = document.querySelector('.navbar-toggler > span');
 
-navbar.addEventListener('click', (e) => {
-  e.stopPropagation();
-  navbar.classList.toggle('open');
-  overlay.classList.toggle('open');
+navbarbtn.addEventListener('click', () => {
+  icon.classList.toggle('fa-times');
+  icon.classList.toggle('fa-bars');
 });
 
-overlay.addEventListener('click', (e) => {
-  e.stopPropagation();
-});
-
-document.body.addEventListener('click', (e) => {
-  navbar.classList.remove('open');
-  overlay.classList.remove('open');
+window.addEventListener('scroll', (e) => {
+  if (this.scrollY > 90) {
+    navbar.classList.add('stick');
+  } else {
+    navbar.classList.remove('stick');
+  }
 });

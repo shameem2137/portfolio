@@ -1,20 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-$primary-color: #1258eb;
-$secondary-color: #d6bcfa;
-$shade-color1: #8c9eff;
-$shade-color2: #9f7aea;
-$black: #090c08;
-$white: #f4fffd;
+$primary-color: #192a56;
+$color1: #ff3f34;
+$color2: #ffd32a;
+$color3: #09d69c;
+$color4: #1e90ff;
+$color5: #273c75;
+$bgdark: #485460;
+$shadowblack100: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadowblack300: 0 5px 15px rgba(0, 0, 0, 0.3);
+$black900: #000;
+$black400: #555555;
+$black100: #f7f7f7;
+$black000: #ffffff;
+$black-alpha: rgba(0, 0, 0, 0.5);
 
-* {
-  padding: 0;
+*,
+::after,
+::before {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none !important;
 }
 
+html,
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 62.5%;
   overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f6fa;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }

@@ -1,179 +1,60 @@
-header {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  background: linear-gradient(180deg, #4b79f899, #5eabf380), url(../images/bg-2.svg) no-repeat center/contain scroll;
-  .nav_bar {
-    position: fixed;
-    display: flex;
-    z-index: 1000;
-    height: 10%;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba($shade-color1, 0.6);
-    &-logo {
-      text-decoration: none;
-      color: $white;
-      font-family: 'Pacifico', cursive;
-      font-size: 2.6rem;
-      letter-spacing: 3px;
-      &:hover {
-        text-decoration: none;
-        color: $white;
-      }
+.navbar {
+  background-color: transparent;
+  padding: 10px;
+
+  &.stick {
+    background-color: rgba($black900, 0.7);
+    padding: 10px;
+  }
+
+  & > .container {
+    padding: 0 15px;
+  }
+  &-toggler {
+    & .fa {
+      color: white !important;
+      font-size: 1.6rem;
     }
-    &-button {
+  }
+  &-brand {
+    font-size: 30px;
+    color: $black000;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  &-nave {
+    text-align: center;
+  }
+
+  & .nav-item {
+    margin: 10px 0 10px 30px;
+    text-align: center;
+    & .nav-link {
       display: inline-block;
-      height: 40px;
-      width: 45px;
-      border-radius: 5px;
-      background-color: $black;
-      border: none;
-      outline: none;
-      &:focus {
-        border: none;
-        outline: none;
-      }
-      &.open {
-        & span:nth-child(1) {
-          transform: translateY(8px) rotate(45deg);
-        }
-        & span:nth-child(2) {
-          opacity: 0;
-        }
-        & span:nth-child(3) {
-          transform: translateY(-8px) rotate(-45deg);
+      color: $black000;
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 5px 0;
+      position: relative;
+      transition: all 0.6s ease-in-out;
+      &:hover {
+        color: $color2;
+        &::before {
+          transform: scale(1);
         }
       }
-      & span {
-        display: block;
-        height: 3px;
-        width: 22px;
-        margin: 5px auto;
-        background-color: $white;
-        transition: all 0.3s ease-in-out;
-      }
-    }
-  }
-
-  .overlay {
-    height: 100vh;
-    width: 270px;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 999;
-    background-color: rgba($black, 0.95);
-    transition: all 0.5s ease-in-out;
-    &.open {
-      right: 0;
-    }
-
-    &_menu {
-      list-style: none;
-      text-align: center;
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: all 0.5s ease-in-out;
-      &-item {
-        display: block;
-        margin: 50px 0;
-        padding: 0 20px;
-      }
-      &-link {
-        display: inline-block;
-        position: relative;
-        font-size: 2rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-decoration: none;
-        letter-spacing: 5px;
-        color: $white;
-        transition: color 0.5s ease-in-out;
-        &:hover {
-          text-decoration: none;
-          &::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 5px;
-          border-radius: 10px;
-          bottom: -10px;
-          left: 0;
-          background-color: $shade-color1;
-          transform-origin: bottom right;
-          transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-        }
-      }
-    }
-  }
-
-  .banner {
-    position: relative;
-    top: 10vh;
-    height: 90vh;
-    &_contain {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      &-image {
-        div {
-          background-color: rgba($white, 0.3);
-          height: 90%;
-          margin-top: 20px;
-          border-radius: 61% 39% 36% 64% / 49% 47% 53% 51%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          & img {
-            height: 100%;
-          }
-        }
-      }
-      &-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        word-wrap: break-word;
-        & h1 {
-          display: block;
-          font-size: 3.6rem;
-          font-family: 'Pacifico', cursive;
-          font-weight: 500;
-          letter-spacing: 1px;
-        }
-        & p {
-          margin-top: 10px;
-          font-size: 1.2rem;
-        }
-        & button {
-          font-size: 1rem;
-          font-weight: 600;
-          border: none;
-          outline: none;
-          letter-spacing: 2px;
-          border-radius: 25px;
-          margin: 5px auto 0;
-          background-color: rgba($primary-color, 0.8);
-          color: $white;
-          padding: 10px 30px;
-          transition: all 0.5s ease-in-out;
-          &:hover {
-            background-color: $black;
-            color: $white;
-          }
-        }
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black000;
+        transform: scale(0);
+        transition: all 0.5s ease;
       }
     }
   }

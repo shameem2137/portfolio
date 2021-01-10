@@ -1,74 +1,10 @@
 @import 'global';
 @import 'navbar';
+@import 'home';
 @import 'media';
+@import 'animation';
 
 section {
-  height: 100%;
-}
-
-#service {
-  padding: 30px 0;
-  background: linear-gradient(180deg, rgba(94, 171, 243, 0.5), rgba(94, 171, 243, 0.2));
-  & .service_content {
-    height: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
-    & h1 {
-      width: 100%;
-      text-align: left;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      font-weight: 900;
-      color: $black;
-      text-transform: uppercase;
-    }
-    & h2 {
-      font-size: 3.2rem;
-      width: 100%;
-      letter-spacing: 3px;
-      font-family: 'Pacifico', cursive;
-    }
-    & ul {
-      width: 100%;
-      padding: 0 20px;
-      & li {
-        display: block;
-        font-size: 1.6rem;
-        margin: 10px 0;
-        position: relative;
-        &::before {
-          content: '';
-          position: absolute;
-          height: 100%;
-          width: 5px;
-          left: -20px;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: $primary-color;
-        }
-      }
-    }
-  }
-
-  & .service_image {
-    text-align: center;
-    & img {
-      animation: ytoggle 3s infinite;
-    }
-  }
-}
-
-@keyframes ytoggle {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  min-height: 100vh;
+  width: 100%;
 }
