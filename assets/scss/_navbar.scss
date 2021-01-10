@@ -1,11 +1,6 @@
 .navbar {
-  background-color: transparent;
+  background-color: $primary-color;
   padding: 10px;
-
-  &.stick {
-    background-color: rgba($black900, 0.7);
-    padding: 10px;
-  }
 
   & > .container {
     padding: 0 15px;
@@ -21,10 +16,6 @@
     color: $black000;
     font-weight: 500;
     letter-spacing: 2px;
-  }
-
-  &-nave {
-    text-align: center;
   }
 
   & .nav-item {
