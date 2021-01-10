@@ -1,7 +1,10 @@
 .navbar {
-  background-color: $primary-color;
+  background-color: transparent;
   padding: 10px;
 
+  &.stick {
+    background-color: $primary-color;
+  }
   & > .container {
     padding: 0 15px;
   }
@@ -15,7 +18,13 @@
     font-size: 30px;
     color: $black000;
     font-weight: 500;
+    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
+    & img {
+      display: block;
+      max-width: 60px;
+    }
   }
 
   & .nav-item {
