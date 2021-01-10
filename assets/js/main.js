@@ -6,11 +6,3 @@ navbarbtn.addEventListener('click', () => {
   icon.classList.toggle('fa-times');
   icon.classList.toggle('fa-bars');
 });
-
-window.addEventListener('scroll', (e) => {
-  if (this.scrollY > 90) {
-    navbar.classList.add('stick');
-  } else {
-    navbar.classList.remove('stick');
-  }
-});
