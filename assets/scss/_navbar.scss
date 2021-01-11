@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba($black900, 0.9);
+  background-color: rgba($primary-color, 0.9);
   padding: 5px 10px;
 
   & > .container {
@@ -9,6 +9,7 @@
     & .fa {
       color: white !important;
       font-size: 1.6rem;
+      transition: all 0.5s ease;
     }
   }
   &-brand {

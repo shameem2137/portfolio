@@ -1,8 +1,8 @@
 .home {
   min-height: 100vh;
   width: 100%;
-  padding: 120px 10px 0 10px;
-  background: linear-gradient(40deg, $primary-color 60%, $color5 40%);
+  padding: 110px 10px 0 10px;
+  background: linear-gradient(230deg, $primary-color 70%, $color4 30%);
   position: relative;
   z-index: 1;
   & .effect {
@@ -97,19 +97,19 @@
         font-size: 1.4rem;
         color: $black000;
       }
-      &:nth-of-type(1) {
+      &.linkedin {
         background-color: #0652dd;
       }
-      &:nth-of-type(2) {
+      &.instagram {
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
       }
-      &:nth-of-type(3) {
+      &.github {
         background-color: $black000;
         & i {
           color: $black900;
         }
       }
-      &:nth-of-type(4) {
+      &.google {
         background-color: $color1;
       }
     }
