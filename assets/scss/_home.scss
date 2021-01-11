@@ -2,45 +2,44 @@
   min-height: 100vh;
   width: 100%;
   padding: 110px 10px 0 10px;
-  background: linear-gradient(230deg, $primary-color 70%, $color4 30%);
+  background: linear-gradient(200deg, $primary-color 55%, $color4 45%);
   position: relative;
   z-index: 1;
   & .effect {
     position: absolute;
-    z-index: -1;
     &-1 {
-      top: 40%;
+      top: 20%;
       left: 20%;
       color: $color2;
       font-size: 1rem;
       animation: spin 3s linear infinite;
     }
     &-2 {
-      top: 20%;
-      right: 10%;
+      top: 12%;
+      right: 8%;
       color: $color3;
       font-size: 1rem;
       animation: spin 8s linear infinite;
     }
     &-3 {
-      top: 30%;
-      left: 50%;
+      top: 35%;
+      left: 60%;
       color: $color1;
       font-size: 1rem;
-      animation: bounce 8s linear infinite;
+      animation: spin 2s linear infinite;
     }
     &-4 {
-      bottom: 25%;
+      top: 25%;
       left: 40%;
-      color: rgba($black000, 0.8);
+      color: $black000;
       font-size: 1rem;
-      animation: spin 8s linear infinite;
+      animation: bounce 4s linear infinite;
     }
   }
 
   &-text {
     & h1 {
-      font-size: 40px;
+      font-size: 45px;
       font-weight: 700;
       margin: 0 0 20px;
       color: $black000;
@@ -54,10 +53,12 @@
     & p {
       font-weight: 400;
       color: $black000;
+      line-height: 30px;
       letter-spacing: 1px;
       font-family: 'Poppins', sans-serif;
       & span {
-        color: $color1;
+        font-size: 18px;
+        color: $color2;
         font-weight: 600;
       }
     }
@@ -89,6 +90,7 @@
       border-radius: 50%;
       margin-left: 10px;
       padding: 20px;
+      border: 2px solid rgba($black000, 0.4);
       & i {
         position: absolute;
         top: 50%;

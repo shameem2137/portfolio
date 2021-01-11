@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
 
             <li class="nav-item">
@@ -51,7 +51,7 @@
       </div>
     </nav>
     <!-- Nav End -->
-    <section class="home d-flex align-items-center">
+    <section id="home" class="home d-flex align-items-center">
       <div class="effect-wrap">
         <span class="fas fa-plus effect effect-1"></span>
         <span class="fas fa-plus effect effect-2"></span>
@@ -64,8 +64,8 @@
             <div class="home-text">
               <h1>Looking for a <span>Web Developer</span> ?</h1>
               <p>
-                Hey, I'm Shameem Ansari a Web Developer and Designer. If you are a <span>Business</span> seeking Web presence or an <span>Employer</span> looking to hire
-                contact me.
+                Hey, I'm <span id="typed"></span>. <br />
+                If you are a Business seeking Web presence or an Employer looking to hire contact me.
               </p>
             </div>
             <div class="home-btn text-center text-md-left">
@@ -87,13 +87,71 @@
     </section>
 
     <!-- Team Coursel -->
-    <section></section>
+    <section id="services" class="services">
+      <div class="container my-5">
+        <div class="row mx-5 services-tab">
+          <div class="col-md-4 services-tab-wrap">
+            <h1>4,000</h1>
+            <p>Projects</p>
+          </div>
+          <div class="col-md-4 services-tab-wrap">
+            <h1>2,258</h1>
+            <p>Deals</p>
+          </div>
+          <div class="col-md-4 services-tab-wrap">
+            <h1>3,980</h1>
+            <p>Customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h1 class="services-title">Our <span>services</span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="services-carousel owl-carousel">
+            <div class="services-item">
+              <div class="icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h3>landing page</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, in.</p>
+            </div>
+            <div class="services-item">
+              <div class="icon">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <h3>responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, in.</p>
+            </div>
+            <div class="services-item">
+              <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>design UI</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, in.</p>
+            </div>
+            <div class="services-item">
+              <div class="icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>web application</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Team Coursel End -->
   </body>
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="assets/js/typewrite.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/scrollIt.min.js"></script>
   <script src="assets/js/main.js"></script>

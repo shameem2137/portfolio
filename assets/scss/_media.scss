@@ -8,3 +8,14 @@
     }
   }
 }
+
+@media screen and (max-width: 982px) {
+  .home {
+    & .container > .row {
+      flex-flow: column wrap;
+      & > * {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

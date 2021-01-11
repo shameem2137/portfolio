@@ -109,18 +109,17 @@ a:hover {
   min-height: 100vh;
   width: 100%;
   padding: 110px 10px 0 10px;
-  background: linear-gradient(230deg, #130f40 70%, #4834d4 30%);
+  background: linear-gradient(200deg, #130f40 55%, #4834d4 45%);
   position: relative;
   z-index: 1;
 }
 
 .home .effect {
   position: absolute;
-  z-index: -1;
 }
 
 .home .effect-1 {
-  top: 40%;
+  top: 20%;
   left: 20%;
   color: #ffd32a;
   font-size: 1rem;
@@ -129,8 +128,8 @@ a:hover {
 }
 
 .home .effect-2 {
-  top: 20%;
-  right: 10%;
+  top: 12%;
+  right: 8%;
   color: #09d69c;
   font-size: 1rem;
   -webkit-animation: spin 8s linear infinite;
@@ -138,25 +137,25 @@ a:hover {
 }
 
 .home .effect-3 {
-  top: 30%;
-  left: 50%;
+  top: 35%;
+  left: 60%;
   color: #ff3f34;
   font-size: 1rem;
-  -webkit-animation: bounce 8s linear infinite;
-          animation: bounce 8s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 .home .effect-4 {
-  bottom: 25%;
+  top: 25%;
   left: 40%;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-size: 1rem;
-  -webkit-animation: spin 8s linear infinite;
-          animation: spin 8s linear infinite;
+  -webkit-animation: bounce 4s linear infinite;
+          animation: bounce 4s linear infinite;
 }
 
 .home-text h1 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   margin: 0 0 20px;
   color: #ffffff;
@@ -172,12 +171,14 @@ a:hover {
 .home-text p {
   font-weight: 400;
   color: #ffffff;
+  line-height: 30px;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
 }
 
 .home-text p span {
-  color: #ff3f34;
+  font-size: 18px;
+  color: #ffd32a;
   font-weight: 600;
 }
 
@@ -215,6 +216,7 @@ a:hover {
   border-radius: 50%;
   margin-left: 10px;
   padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .home-btn a i {
@@ -285,7 +287,229 @@ a:hover {
           animation: bounce 2s linear infinite;
 }
 
+.services {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #4834d4;
+}
+
+.services-tab {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.services-tab-wrap {
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.services-tab-wrap:nth-child(2) {
+  border: 1px solid rgba(116, 125, 140, 0.5);
+  background-color: #ff3f34;
+}
+
+.services-tab-wrap h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.services-tab-wrap p {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.services-carousel .owl-dots {
+  text-align: center;
+}
+
+.services-carousel .owl-dots button.owl-dot {
+  display: inline-block;
+  height: 7px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.services-carousel .owl-dots button.owl-dot.active {
+  background-color: #ffc312;
+}
+
+.services-title {
+  font-size: 2.8rem;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.services-title::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 4px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.services-title span {
+  color: #ffd32a;
+}
+
+.services-item {
+  min-height: 200px;
+  margin: 15px;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.services-item:hover .icon i {
+  color: #ffffff;
+}
+
+.services-item:hover .icon::before {
+  left: 0;
+  opacity: 1;
+}
+
+.services-item:hover::before {
+  opacity: 1;
+  left: 10%;
+}
+
+.services-item:hover::after {
+  opacity: 1;
+  right: 10%;
+}
+
+.services-item::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ff3f34;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+
+.services-item::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffd32a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+
+.services-item .icon {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  margin: 0 auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-item .icon i {
+  font-size: 34px;
+  color: #4834d4;
+  z-index: 2;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.services-item .icon::before {
+  content: '';
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #4834d4;
+  border-radius: 50%;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+
+.services-item h3 {
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.services-item p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 0 10px;
+}
+
 @media screen and (max-width: 780px) {
+  .home .container > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .home .container > .row > * {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 982px) {
   .home .container > .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -371,9 +595,4 @@ a:hover {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-}
-
-section {
-  min-height: 100vh;
-  width: 100%;
 }
