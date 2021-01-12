@@ -42,8 +42,8 @@
       text-align: center;
       & button.owl-dot {
         display: inline-block;
-        height: 7px;
-        width: 30px;
+        height: 6px;
+        width: 27px;
         border-radius: 10px;
         background-color: #fff;
         margin: 0 5px;
@@ -71,13 +71,12 @@
       &::before {
         content: '';
         position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 4px;
-        width: 90%;
-        border-radius: 20px;
-        background-color: #fff;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10px;
+        border-radius: 10px;
+        background-color: $color2;
       }
     }
   }
@@ -175,7 +174,7 @@
       text-transform: capitalize;
     }
     & p {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 20px;
       padding: 0 5px;

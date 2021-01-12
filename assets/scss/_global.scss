@@ -33,8 +33,7 @@ body {
   font-weight: 400;
   background-color: $color4;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &.dark {
     background-color: rgba($black900, 0.9);
     & .navbar {
@@ -44,9 +43,6 @@ body {
       background: linear-gradient(200deg, $bgdark 55%, transparent 45%);
       &-text > * {
         color: $black100;
-        & span {
-          color: rgba($color2, 0.8);
-        }
       }
     }
     & .services {
@@ -63,7 +59,7 @@ body {
         }
         & .icon {
           &::before {
-            background-color: rgba($primary-color, 0.75);
+            background-color: rgba($color3, 0.75);
           }
         }
       }

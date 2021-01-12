@@ -19,9 +19,8 @@ body {
   font-weight: 400;
   background-color: #4834d4;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 body.dark {
@@ -40,10 +39,6 @@ body.dark .home-text > * {
   color: #f7f7f7;
 }
 
-body.dark .home-text > * span {
-  color: rgba(255, 211, 42, 0.8);
-}
-
 body.dark .services-tab-wrap {
   color: #000;
 }
@@ -58,7 +53,7 @@ body.dark .services-item i {
 }
 
 body.dark .services-item .icon::before {
-  background-color: rgba(19, 15, 64, 0.75);
+  background-color: rgba(9, 214, 156, 0.75);
 }
 
 body.dark .testimonials {
@@ -261,7 +256,7 @@ section {
 }
 
 .home-text h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   margin: 0 0 20px;
   color: #ffffff;
@@ -270,6 +265,7 @@ section {
 }
 
 .home-text h1 span {
+  font-size: 42px;
   letter-spacing: 2px;
   color: #ffd32a;
 }
@@ -454,8 +450,8 @@ section {
 
 .services-carousel .owl-dots button.owl-dot {
   display: inline-block;
-  height: 7px;
-  width: 30px;
+  height: 6px;
+  width: 27px;
   border-radius: 10px;
   background-color: #fff;
   margin: 0 5px;
@@ -490,14 +486,12 @@ section {
 .services-wrap-title::before {
   content: '';
   position: absolute;
-  bottom: -10px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 4px;
-  width: 90%;
-  border-radius: 20px;
-  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #ffd32a;
 }
 
 .services-item {
@@ -611,7 +605,7 @@ section {
 }
 
 .services-item p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   padding: 0 5px;
