@@ -1,6 +1,27 @@
 const navbar = document.querySelector('.navbar');
 const navbarbtn = document.querySelector('.navbar-toggler');
 const icon = document.querySelector('.navbar-toggler > span');
+const darkmode = document.querySelector('#darkmodewrap');
+const body = document.body;
+
+window.addEventListener('load', (e) => {
+  if (localStorage.getItem('darkmode')) {
+    body.classList.add('dark');
+    darkmode.setAttribute('checked', true);
+  } else {
+    body.classList.remove('dark');
+    darkmode.removeAttribute('checked');
+  }
+});
+
+darkmode.addEventListener('click', (e) => {
+  body.classList.toggle('dark');
+  if (body.classList.contains('dark')) {
+    localStorage.setItem('darkmode', 'true');
+  } else {
+    localStorage.removeItem('darkmode');
+  }
+});
 
 navbarbtn.addEventListener('click', () => {
   icon.classList.toggle('fa-times');
@@ -13,13 +34,12 @@ $('.services-carousel').owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: true,
     },
     600: {
       items: 2,
     },
     1000: {
-      items: 3,
+      items: 4,
     },
   },
 });

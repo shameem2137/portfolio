@@ -5,6 +5,7 @@ $color1: #ff3f34;
 $color2: #ffd32a;
 $color3: #09d69c;
 $color4: #4834d4;
+$color5: #a55eea;
 $bgdark: #485460;
 $shadowblack100: 0 5px 15px rgba(0, 0, 0, 0.1);
 $shadowblack300: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -23,14 +24,59 @@ $black-alpha: rgba(0, 0, 0, 0.5);
   outline: none !important;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
+}
+body {
   font-size: 16px;
+  overflow-x: hidden;
   font-weight: 400;
-  background-color: #f5f6fa;
+  background-color: $color4;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  transition: all 0.6s ease-in-out;
+  &.dark {
+    background-color: rgba($black900, 0.9);
+    & .navbar {
+      background-color: rgba($bgdark, 0.9);
+    }
+    & .home {
+      background: linear-gradient(200deg, $bgdark 55%, transparent 45%);
+      &-text > * {
+        color: $black100;
+        & span {
+          color: rgba($color2, 0.8);
+        }
+      }
+    }
+    & .services {
+      &-tab {
+        &-wrap {
+          color: $black900;
+        }
+      }
+      &-item {
+        background-color: $bgdark;
+        & > *,
+        i {
+          color: $black000;
+        }
+        & .icon {
+          &::before {
+            background-color: rgba($primary-color, 0.75);
+          }
+        }
+      }
+    }
+
+    & .testimonials {
+      background: linear-gradient(200deg, transparent 55%, $bgdark 45%);
+    }
+
+    & .about {
+      background: linear-gradient(200deg, $bgdark 55%, transparent 45%);
+    }
+  }
 }
 
 img {
@@ -46,4 +92,9 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+section {
+  width: 100%;
+  min-height: 50vh;
 }

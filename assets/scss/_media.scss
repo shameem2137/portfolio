@@ -1,4 +1,4 @@
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 982px) {
   .home {
     & .container > .row {
       flex-flow: column wrap;
@@ -9,12 +9,25 @@
   }
 }
 
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 780px) {
   .home {
     & .container > .row {
       flex-flow: column wrap;
       & > * {
         margin-bottom: 30px;
+      }
+    }
+
+    &-img {
+      & .circle {
+        height: 300px;
+        width: 300px;
+        &::before {
+          content: '';
+          top: 30px;
+          left: 20px;
+          transform-origin: 130px 120px;
+        }
       }
     }
   }
