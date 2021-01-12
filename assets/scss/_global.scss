@@ -26,10 +26,10 @@ $black-alpha: rgba(0, 0, 0, 0.5);
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 16px;
-  overflow-x: hidden;
   font-weight: 400;
   background-color: $color4;
   font-family: 'Poppins', sans-serif;
@@ -93,4 +93,29 @@ a {
 section {
   width: 100%;
   min-height: 50vh;
+}
+
+.navigate {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: $color1;
+  color: $black000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 2000;
+  visibility: hidden;
+  cursor: pointer;
+  transition: visibility 0.5s ease-in-out;
+  & i {
+    font-size: 1.4rem;
+  }
+  &.visible {
+    visibility: visible;
+  }
 }

@@ -2,6 +2,7 @@ const navbar = document.querySelector('.navbar');
 const navbarbtn = document.querySelector('.navbar-toggler');
 const icon = document.querySelector('.navbar-toggler > span');
 const darkmode = document.querySelector('#darkmodewrap');
+const navigate = document.querySelector('.navigate');
 const body = document.body;
 
 window.addEventListener('load', (e) => {
@@ -12,6 +13,18 @@ window.addEventListener('load', (e) => {
     body.classList.remove('dark');
     darkmode.removeAttribute('checked');
   }
+});
+
+window.addEventListener('scroll', () => {
+  if (this.scrollY > 200) {
+    navigate.classList.add('visible');
+  } else {
+    navigate.classList.remove('visible');
+  }
+});
+
+navigate.addEventListener('click', () => {
+  window.scrollTo(0, 0);
 });
 
 darkmode.addEventListener('click', (e) => {
