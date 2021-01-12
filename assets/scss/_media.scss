@@ -1,23 +1,5 @@
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 806px) {
   .home {
-    & .container > .row {
-      flex-flow: column wrap;
-      & > * {
-        margin-bottom: 30px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .home {
-    & .container > .row {
-      flex-flow: column wrap;
-      & > * {
-        margin-bottom: 30px;
-      }
-    }
-
     &-img {
       & .circle {
         height: 300px;
