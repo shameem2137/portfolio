@@ -657,7 +657,39 @@ body.dark .contact textarea:active {
 
 .testimonials {
   min-height: 100vh;
+  padding-top: 10vh;
   background: linear-gradient(200deg, transparent 55%, #130f40 45%);
+}
+
+.testimonials-carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  background-color: #fff;
+}
+
+.testimonials-carousel .owl-dots {
+  text-align: center;
+}
+
+.testimonials-carousel .owl-dots button.owl-dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 16px 5px;
+}
+
+.testimonials-carousel .owl-dots button.owl-dot.active {
+  background-color: #ffd32a;
 }
 
 .about {
