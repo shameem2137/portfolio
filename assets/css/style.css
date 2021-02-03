@@ -144,8 +144,6 @@ body.dark .contact textarea:active {
 .navbar-toggler .fa {
   color: white !important;
   font-size: 1.6rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .navbar-brand {

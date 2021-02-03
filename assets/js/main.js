@@ -1,5 +1,6 @@
 const navbar = document.querySelector('.navbar');
 const navbarbtn = document.querySelector('.navbar-toggler');
+const navbarcollapse = document.querySelector('.navbar-collapse');
 const icon = document.querySelector('.navbar-toggler > span');
 const darkmode = document.querySelector('#darkmodewrap');
 const navigate = document.querySelector('.navigate');
@@ -12,6 +13,14 @@ window.addEventListener('load', (e) => {
   } else {
     body.classList.remove('dark');
     darkmode.removeAttribute('checked');
+  }
+});
+
+window.addEventListener('click', (e) => {
+  let target = e.target;
+  var _mobileMenuOpen = navbarcollapse.classList.contains('show');
+  if (_mobileMenuOpen === true && !target.classList.contains('navbar-toggler')) {
+    navbarbtn.click();
   }
 });
 
