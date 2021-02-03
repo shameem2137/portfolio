@@ -28,6 +28,45 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.navigate {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 40px;
+  width: 40px;
+  background-color: $color1;
+  color: $black000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  & i {
+    font-size: 1.2rem;
+  }
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -72,52 +111,19 @@ body {
     & .about {
       background: linear-gradient(200deg, $bgdark 55%, transparent 45%);
     }
-  }
-}
 
-img {
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-section {
-  width: 100%;
-  min-height: 50vh;
-}
-
-.navigate {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  height: 40px;
-  width: 40px;
-  background-color: $color1;
-  color: $black000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  z-index: 2000;
-  opacity: 0;
-  visibility: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  & i {
-    font-size: 1.2rem;
-  }
-  &.visible {
-    opacity: 1;
-    visibility: visible;
+    & .contact {
+      &-card {
+        background-color: rgba($black400, 1);
+      }
+      & input,
+      textarea {
+        border-bottom: 2px solid $black400;
+        &:focus,
+        &:active {
+          border-bottom: 2px solid $black000;
+        }
+      }
+    }
   }
 }
