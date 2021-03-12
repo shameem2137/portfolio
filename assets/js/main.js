@@ -6,6 +6,10 @@ const darkmode = document.querySelector('#darkmodewrap');
 const navigate = document.querySelector('.navigate');
 const body = document.body;
 
+document.getElementById('resumedownload').addEventListener('click', (e) => {
+  window.open('assets/Resume.pdf');
+});
+
 window.addEventListener('load', (e) => {
   if (localStorage.getItem('darkmode')) {
     body.classList.add('dark');
@@ -73,4 +77,22 @@ var typed = new Typed('#typed', {
   startDelay: 500,
   backDelay: 1500,
   loop: true,
+});
+
+// Gallery Filter
+$(document).ready(function () {
+  $('.list').click(function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    const value = $(this).attr('data-filter');
+    if (value == 'all') {
+      $('.projects-tab-item').show('1000');
+    } else {
+      $('.projects-tab-item')
+        .not('.' + value)
+        .hide('1000');
+      $('.projects-tab-item')
+        .filter('.' + value)
+        .show('1000');
+    }
+  });
 });

@@ -1,4 +1,58 @@
 .about {
   min-height: 100vh;
   background: linear-gradient(200deg, $primary-color 55%, transparent 45%);
+
+  &-jumbo {
+    background-color: rgba(#fff, 0.2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: $black000;
+  }
+
+  &-wrap {
+    text-align: center;
+    h1 {
+      position: relative;
+      font-size: 2.8rem;
+      color: $black000;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  &-content {
+    z-index: 10;
+    min-height: 50vh;
+    width: 100%;
+    margin: 50px auto;
+    &-message {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      & h1 {
+        text-align: left;
+        width: 100%;
+      }
+      & p {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1.2rem;
+      }
+    }
+
+    &-progress {
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      & ul li {
+        margin: 20px 0;
+      }
+    }
+  }
 }
