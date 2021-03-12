@@ -666,39 +666,6 @@ body.dark .contact textarea:active {
   background: linear-gradient(200deg, transparent 55%, #130f40 45%);
 }
 
-.projects-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.projects-wrap-title {
-  text-align: center;
-  width: 350px;
-  position: relative;
-  font-size: 2.8rem;
-  color: #ffffff;
-  letter-spacing: 2px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin: 50px 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-.projects-wrap-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 6px;
-  border-radius: 10px;
-  background-color: #ffd32a;
-}
-
 .about {
   min-height: 100vh;
   background: linear-gradient(200deg, #130f40 55%, transparent 45%);

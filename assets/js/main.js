@@ -50,8 +50,6 @@ navbarbtn.addEventListener('click', () => {
   icon.classList.toggle('fa-bars');
 });
 
-// Owl Carousels
-
 $('.services-carousel').owlCarousel({
   loop: true,
   responsiveClass: true,
@@ -68,17 +66,6 @@ $('.services-carousel').owlCarousel({
   },
 });
 
-$('.testimonials-carousel').owlCarousel({
-  loop: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-  },
-});
-
-// Typed Script
 var typed = new Typed('#typed', {
   strings: ['Shameem Ansari', 'Web Developer', 'Web Designer', 'Freelancer'],
   typeSpeed: 100,
