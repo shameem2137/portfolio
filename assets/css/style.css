@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.bg-purple {
+  background-color: #a55eea !important;
+}
+
+.bg-green {
+  background-color: #09d69c !important;
+}
+
+.bg-orange {
+  background-color: #fcd1d1 !important;
+}
+
 *,
 ::after,
 ::before {
@@ -765,9 +777,6 @@ body.dark .contact textarea:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -775,14 +784,29 @@ body.dark .contact textarea:active {
 }
 
 .about-content-message h1 {
-  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: rgba(165, 94, 234, 0.8);
+  padding: 10px;
+  letter-spacing: 2px;
   width: 100%;
+}
+
+.about-content-message h5 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .about-content-message p {
   width: 100%;
+  letter-spacing: 1px;
+  word-spacing: 2px;
   margin: 10px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about-content-progress {

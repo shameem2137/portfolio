@@ -15,6 +15,18 @@ $black100: #f7f7f7;
 $black000: #ffffff;
 $black-alpha: rgba(0, 0, 0, 0.5);
 
+.bg-purple {
+  background-color: $color5 !important;
+}
+
+.bg-green {
+  background-color: $color3 !important;
+}
+
+.bg-orange {
+  background-color: #fcd1d1 !important;
+}
+
 *,
 ::after,
 ::before {
