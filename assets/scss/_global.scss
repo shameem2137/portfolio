@@ -75,6 +75,11 @@ body {
   transition: all 0.5s ease-in-out;
   &.dark {
     background-color: rgba($black900, 0.9);
+    & .navigate {
+      background-color: $color2;
+      color: rgba($black900, 0.8);
+    }
+
     & .navbar {
       background-color: rgba($bgdark, 0.9);
     }
@@ -104,7 +109,7 @@ body {
       }
     }
 
-    & .testimonials {
+    & .projects {
       background: linear-gradient(200deg, transparent 55%, $bgdark 45%);
     }
 

@@ -1,0 +1,32 @@
+.projects {
+  min-height: 100vh;
+  padding-top: 10vh;
+  background: linear-gradient(200deg, transparent 55%, $primary-color 45%);
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    &-title {
+      text-align: center;
+      width: 350px;
+      position: relative;
+      font-size: 2.8rem;
+      color: $black000;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 50px 0;
+      font-family: 'Poppins', sans-serif;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 6px;
+        border-radius: 10px;
+        background-color: $color2;
+      }
+    }
+  }
+}
