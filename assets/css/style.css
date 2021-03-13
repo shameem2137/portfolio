@@ -900,6 +900,10 @@ footer {
     -webkit-transform-origin: 130px 120px;
             transform-origin: 130px 120px;
   }
+  .projects-tab-item {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 @-webkit-keyframes pulseAnim {
