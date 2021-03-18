@@ -7,7 +7,7 @@ const navigate = document.querySelector('.navigate');
 const body = document.body;
 
 document.getElementById('resumedownload').addEventListener('click', (e) => {
-  window.open('assets/Resume.pdf');
+  window.open('assets/doc/Resume.pdf');
 });
 
 window.addEventListener('load', (e) => {
