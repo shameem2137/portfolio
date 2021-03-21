@@ -812,7 +812,7 @@ body.dark .contact textarea:active {
 .about-content-progress {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
 }
 
 .about-content-progress ul li {
@@ -829,6 +829,21 @@ body.dark .contact textarea:active {
   border-radius: 64% 36% 70% 30% / 44% 47% 53% 56%;
   background-color: rgba(255, 255, 255, 0.4);
   margin: 20px;
+}
+
+.contact-wrap {
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+
+.contact-wrap h1 {
+  position: relative;
+  font-size: 2.8rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-card {
@@ -903,6 +918,12 @@ footer {
   .projects-tab-item {
     height: 150px;
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-content h1 {
+    font-size: 2rem;
   }
 }
 

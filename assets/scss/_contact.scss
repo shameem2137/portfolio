@@ -2,10 +2,25 @@
   min-height: 50vh;
   width: 100%;
   padding: 0;
+
   &img {
     border-radius: 64% 36% 70% 30% / 44% 47% 53% 56%;
     background-color: rgba($black000, 0.4);
     margin: 20px;
+  }
+
+  &-wrap {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    h1 {
+      position: relative;
+      font-size: 2.8rem;
+      color: $black000;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 
   &-card {
